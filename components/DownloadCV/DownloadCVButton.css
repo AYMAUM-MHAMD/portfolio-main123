@@ -1,0 +1,38 @@
+.downloadcv-container {
+  position: fixed;
+  bottom: 250px; /* قلل القيمة ليصعد للأعلى */
+  right: 27px;
+  height: 100px; /* اجعل الحجم أصغر أيضًا */
+  width: 100px;
+  border-radius: 50%;
+  background-color: #ffffffcc;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999; /* تأكد أنه أعلى من أي عنصر آخر */
+  backdrop-filter: blur(6px);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.downloadcv-container:hover {
+  background-color: #ffffffee;
+  transform: scale(1.05);
+}
+
+
+
+@media (max-width: 600px) {
+  .downloadcv-container {
+    height: 60px;
+    width: 60px;
+    bottom: 200px; /* اجعلها أعلى قليلاً */
+    right: 20px; /* اجعلها أقرب لليمين */
+  }
+
+  .downloadcv-container img {
+    width: 40%;
+    height: 40%;
+  }
+}

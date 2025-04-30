@@ -1,0 +1,30 @@
+/* LottieIcon.css */
+.lottie-container {
+  position: fixed;
+  bottom: 100px;
+  right: 15px;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  background-color: #ffffffcc; /* لون الخلفية مع شفافية */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* ظل خفيف */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  backdrop-filter: blur(6px); /* تأثير الزجاج */
+  cursor: pointer; /* تغيير المؤشر عند المرور */
+}
+
+
+@media (max-width: 600px) {
+  .lottie-container {
+    height: 70px;
+    width: 70px;
+  }
+
+  .lottie-container > div {
+    width: 60%;
+    height: 60%;
+  }
+}
