@@ -1,16 +1,18 @@
+"use client";
+
 import Lottie from "lottie-react";
 import animationData from "./animation.json";
-import "./LottieIcon.css"; // استيراد ملف CSS
+import "./LottieIcon.css";
 import Link from "next/link";
 
 export default function LottieIcon() {
   return (
     <Link
-      href="https://forms.gle/RK4YmjS6G598pKGH8" // استبدل هذا بالرابط الخاص بالنموذج
-      target="_blank" // لفتح الرابط في نافذة جديدة
+      href="https://forms.gle/RK4YmjS6G598pKGH8"
+      target="_blank"
       rel="noopener noreferrer"
       title="Service request form"
-      style={{ textDecoration: "none" }} // لإزالة التزيين (التسطير) من الرابط
+      style={{ textDecoration: "none" }}
     >
       <div className="lottie-container">
         <Lottie

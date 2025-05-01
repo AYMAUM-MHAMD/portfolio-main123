@@ -10,8 +10,13 @@ import Approach from "@/components/Approach";
 import Experience from "@/components/Experience";
 import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
-import LottieIcon from "@/components/lottie/LottieIcon";
+import dynamic from "next/dynamic";
 import DownloadCVButton from "@/components/DownloadCV/DownloadCVButton";
+
+// استيراد LottieIcon بطريقة dynamic لمنع الخطأ المرتبط بـ SSR
+const LottieIcon = dynamic(() => import("@/components/lottie/LottieIcon"), {
+  ssr: false,
+});
 
 const Home = () => {
   return (
@@ -33,4 +38,3 @@ const Home = () => {
 };
 
 export default Home;
-
