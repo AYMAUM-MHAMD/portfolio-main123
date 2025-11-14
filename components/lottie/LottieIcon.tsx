@@ -8,7 +8,7 @@ import Link from "next/link";
 export default function LottieIcon() {
   return (
     <Link
-      href="https://forms.gle/RK4YmjS6G598pKGH8"
+      href="https://forms.gle/zGXwwdEhZrZhn8Vp8"
       target="_blank"
       rel="noopener noreferrer"
       title="Service request form"
