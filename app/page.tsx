@@ -12,6 +12,7 @@ import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import dynamic from "next/dynamic";
 import DownloadCVButton from "@/components/DownloadCV/DownloadCVButton";
+import WhatsAppButton from "@/components/WhatsApp/WhatsAppButton";
 
 // استيراد LottieIcon بطريقة dynamic لمنع الخطأ المرتبط بـ SSR
 const LottieIcon = dynamic(() => import("@/components/lottie/LottieIcon"), {
@@ -32,6 +33,7 @@ const Home = () => {
         <Footer />
         <LottieIcon />
         <DownloadCVButton />
+        <WhatsAppButton />
       </div>
     </main>
   );
